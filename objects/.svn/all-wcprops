@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/bel/!svn/ver/30128/timing/trunk/configuration/monitoring/nagios/objects
+END
+commands.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/bel/!svn/ver/30128/timing/trunk/configuration/monitoring/nagios/objects/commands.cfg
+END
+timeperiods.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/bel/!svn/ver/30128/timing/trunk/configuration/monitoring/nagios/objects/timeperiods.cfg
+END
+switches.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/bel/!svn/ver/30128/timing/trunk/configuration/monitoring/nagios/objects/switches.cfg
+END
+contacts.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/bel/!svn/ver/30128/timing/trunk/configuration/monitoring/nagios/objects/contacts.cfg
+END
+templates.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/bel/!svn/ver/30128/timing/trunk/configuration/monitoring/nagios/objects/templates.cfg
+END

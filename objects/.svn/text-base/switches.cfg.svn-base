@@ -1,0 +1,35 @@
+# hostgroup that holds all white rabbit switches
+define hostgroup {
+        hostgroup_name  switch-wr
+        }
+
+# a template for white rabbit switches
+define host {
+        use             generic-host    ; inherit this
+        name            switch-wr       ; reference this template by this
+        hostgroups      switch-wr       ; add to group switch-wr
+        _snmp_community public          ; set the snmp community
+        register        0               ; this is a template, do not register
+        }
+
+# service to check
+define service {
+        use             generic-service
+        name            load
+        service_description     load
+        check_command   snmp-load!400!500!300!400!200!300
+        hostgroup_name  switch-wr       ; check this on any host who is member of switch-wr
+        }
+        
+
+###
+### PHYSICAL HOSTS
+###
+
+# a real host
+define host {
+        use             switch-wr
+        host_name       nwt1002m66
+        address         192.168.20.6
+        }
+

@@ -1,0 +1,29 @@
+####################################################################################
+# Contacts
+####################################################################################
+
+define contact {
+        use                             generic-contact
+        contact_name                    dummy
+        host_notifications_enabled      0
+        service_notifications_enabled   0
+        }
+
+
+# christoph handel is a contact, but does not want to receive any notifications
+define contact {
+        use                             generic-contact
+        contact_name                    handel
+        host_notifications_enabled      0
+        service_notifications_enabled   0
+        }
+####################################################################################
+# Groups
+####################################################################################
+
+
+define contactgroup{
+        contactgroup_name          csco-timadm
+        alias                      timing administrators
+        # members                    dummy
+}
